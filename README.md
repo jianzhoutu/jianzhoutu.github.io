@@ -1,1 +1,5 @@
-This is the source code to Jon Barron's public academic website: https://jonbarron.info/. Feel free to clone this code for your own personal use.
+Personal academic website of Jian Zhou (Tony) Tu.
+
+Website: https://jianzhoutu.github.io/
+
+Website design inspired by Jon Barron’s academic website: https://github.com/jonbarron/jonbarron.github.io
