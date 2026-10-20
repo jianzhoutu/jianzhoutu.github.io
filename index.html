@@ -88,8 +88,7 @@
         <p class="location">Salt Lake City, Utah</p>
         <nav class="profile-links" aria-label="Contact links">
           <span>u1592215 [at] utah [dot] edu</span>
-          <!-- CV link: add when Tony approves the CV and is ready to share it:
-          <a href="Tony_Tu_CV.pdf">CV (PDF)</a> -->
+          <a href="Tony_Tu_CV.pdf">CV (PDF)</a>
 
         </nav>
       </div>
@@ -107,7 +106,7 @@
       <p>
         Before Utah, I conducted machine-learning research with the
         Canadian Vertical Lift Autonomy Demonstration (CVLAD) team at the
-        National Research Council of Canada, and earned my Bachelor of
+        National Research Council Canada, and earned my Bachelor of
         Computer Science Honours, with High Distinction, at Carleton University.
       </p>
 
@@ -121,7 +120,7 @@
       <ul>
         <li>Active perception and task-directed information gathering</li>
         <li>Probabilistic scene representations connecting perception and motion planning</li>
-        <li>Learning-based planning and decision-making under partial observability</li>
+        <li>Learning-based planning and decision-making under partial observability, with safety guarantees</li>
       </ul>
     </section>
 
@@ -130,32 +129,17 @@
 
       <article>
         <h3>Information Gathering for Manipulation Under Occlusion</h3>
-        <p class="meta">Ongoing MS thesis research · University of Utah</p>
-        <p>
-          My thesis investigates how a robot can decide when it has
-          enough information to attempt a planned motion in a cluttered
-          scene. The robot maintains a probabilistic belief about
-          occupancy and evaluates the planned motion against that
-          belief. When more information is needed, it chooses between
-          lifting an object to reveal hidden space and moving an
-          object out of the way.
-        </p>
-        <p>
-          The method currently runs in kinematic simulation on a
-          20-scene benchmark. Real-robot validation is the next step.
-        </p>
+        <p class="meta">MS thesis research · University of Utah · July 2026–present</p>
+        <p>My thesis develops task-conditioned information gathering for retrieving a target object under occlusion. A fixed-camera robot first plans an optimistic retrieval trajectory, treating unknown space and other objects as free while avoiding the static environment. The space swept out by this motion defines the task-relevant region.</p>
+        <p>The system maintains a voxel occupancy belief and chooses between peeking—lifting an occluding object, observing behind it, and returning it—and relocating a blocking object to maximize expected information gain over that region. It executes the retrieval only once the region is fully observed and clear.</p>
+        <p>In kinematic simulation, the system retrieved the designated target in all 20 SceneReplica benchmark scenes, typically with at most one extra action. I also demonstrated the method on a real KUKA iiwa in two comparable tabletop scenes and am currently extending it to shelf scenes.</p>
       </article>
 
       <article>
         <h3>Real-Robot Pick-and-Place System</h3>
-        <p class="meta">Robotics systems development · LL4MA Lab</p>
-        <p>
-          Since January 2026, I have been the sole developer of the lab's
-          pick-and-place system on a KUKA iiwa arm. I extended an existing
-          motion-planning tool into full pick-and-place, integrating
-          perception, grasping, motion planning, calibration, and execution
-          recovery into a working robot pipeline.
-        </p>
+        <p class="meta">Robotics systems development · LL4MA Lab · September 2025–August 2026</p>
+        <p>After working with postdoctoral researcher Dr. Martin Matak on known-object perception, I became the sole developer of the pick-and-place system in January 2026. I extended his cuRobo-based planning wrapper into a full pipeline for a KUKA iiwa arm with a Robotiq 2F-140 gripper, adding trajectory preview with an abort option, joint pick-and-place planning, and grasp and placement re-scoring from the configurations the arm actually reaches.</p>
+        <p>I later integrated stereo depth, segmentation, and grasp generation for arbitrary objects, migrated the system from cuRobo v1 to v2, and redesigned hand-eye calibration using a custom 3D-printed ChArUco fixture and replayable calibration poses.</p>
       </article>
 
       <article>
@@ -171,13 +155,8 @@
 
       <article>
         <h3>Helicopter Landing-Phase Identification</h3>
-        <p class="meta">Machine-learning research · National Research Council of Canada (CVLAD) · 2024</p>
-        <p>
-          In a team of three, I led the machine-learning work on detecting
-          helicopter landing phases from flight time-series data, comparing
-          16 deep-learning models (dense, CNN, RNN and CRNN architectures
-          across four datasets). I co-presented the results at CASI ASTRO 2024.
-        </p>
+        <p class="meta">Machine-learning research · National Research Council Canada (CVLAD) · May–July 2024</p>
+        <p>As sole developer of the project's landing-detection models, I trained and compared supervised models on 6-DOF helicopter flight time-series data using MLP, CNN–MLP, RNN–MLP, and CNN–RNN–MLP architectures in TensorFlow/Keras, evaluating different input feature sets. I also developed a MATLAB app for data preprocessing and manual labeling, co-presented the results at CASI ASTRO 2024, and wrote the machine-learning sections of the lab's internal technical report.</p>
       </article>
     </section>
 
@@ -195,7 +174,7 @@
       <article>
         <h3>Carleton University</h3>
         <p>
-          Bachelor of Computer Science Honours · 2025<br>
+          Bachelor of Computer Science Honours · June 2025<br>
           Stream: Artificial Intelligence and Machine Learning<br>
           Co-operative Education · With High Distinction
         </p>
